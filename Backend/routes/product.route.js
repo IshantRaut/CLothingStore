@@ -8,7 +8,7 @@ import {
 	getRecommendedProducts,
 	toggleFeaturedProduct,
 } from "../controllers/product.controller.js";
-import { adminRoute, protectRoute } from "../middleware/auth.middleware.js";
+import { adminRoute, protectRoute } from "../middlewares/auth.middleware.js";
 
 const router = express.Router();
 
