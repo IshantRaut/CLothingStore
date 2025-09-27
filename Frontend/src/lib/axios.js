@@ -4,7 +4,7 @@ const axiosInstance = axios.create({
   baseURL: import.meta.env.DEV
     ? "http://localhost:4000/api"
     : "https://clothingstore-w3w0.onrender.com/api",  // backend URL
-  withCredentials: true, // send cookies
+  withCredentials: true, // send cookies for auth
 });
 
 export default axiosInstance;
