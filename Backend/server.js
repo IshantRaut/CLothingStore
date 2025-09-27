@@ -17,11 +17,12 @@ const PORT = process.env.PORT || 4000;
 
 app.use(cors({
   origin: [
-    process.env.FRONTEND_URL, 
-    "http://localhost:5173"
+    process.env.FRONTEND_URL,        // your deployed frontend URL
+    "http://localhost:5173",         // local dev
   ],
-  credentials: true,
+  credentials: true,                 // allow cookies
 }));
+
 
 app.use(express.json({ limit: "10mb" }));
 app.use(cookieParser());
