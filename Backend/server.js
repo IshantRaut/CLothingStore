@@ -41,11 +41,11 @@ app.use("/api/analytics", analyticsRoutes);
 app.use("/api/cart", cartRoutes);
 
 // ✅ Serve frontend in production
-{
+
   app.get("/", (req, res) => {
     res.send("API is running...");
   });
-}
+
 
 // ✅ Start server + DB
 app.listen(PORT, () => {
