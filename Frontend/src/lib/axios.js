@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-  baseURL: import.meta.env.DEV ? "http://localhost:4000/api" : "/api", // 👈 fixed
+  baseURL: import.meta.env.DEV ? "https://clothingstore-1jmp.onrender.com/api" : "/api", // 👈 fixed
   withCredentials: true, // send cookies
 });
 
