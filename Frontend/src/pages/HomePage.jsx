@@ -23,7 +23,7 @@ const HomePage = () => {
     return (
         <div className="relative min-h-screen text-slate-100 overflow-hidden bg-gradient-to-br from-blue-900 via-blue-700 to-slate-900">
             {/* Hero Section */}
-            <div className="relative h-[60vh] flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: "url('/store-hero.jpg')" }}>
+            <div className="relative h-[60vh] flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: "url('/bags.jpg')" }}>
                 <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
 <div className="relative z-10 text-center">
