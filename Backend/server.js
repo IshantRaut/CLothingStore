@@ -41,14 +41,7 @@ app.use("/api/analytics", analyticsRoutes);
 app.use("/api/cart", cartRoutes);
 
 // ✅ Serve frontend in production
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "/frontend/dist")));
-
-  // catch-all for SPA
-  app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
-  });
-} else {
+{
   app.get("/", (req, res) => {
     res.send("API is running...");
   });
